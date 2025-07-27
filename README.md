@@ -1,39 +1,61 @@
-SkySave – Autonomous Search and Rescue Drone Swarm
-Patent Filed (in progress hence confidential)
+# 🌐 SkySave – Autonomous Search and Rescue Drone Swarm  
+**Patent Filed**(in progress hence confidential)
 
-**Overview**
-SkySave is an autonomous drone swarm system designed to assist in search and rescue operations in disaster-affected areas such as forests, islands, and other challenging terrains. The system uses multiple drones working collaboratively, equipped with cameras and machine learning models, to detect humans in real-time and provide rapid response capabilities.
+---
 
-**Key Features**
-Autonomous Flight & Path Planning
-Implements GPS-based recursive path planning for efficient area coverage.
-Real-Time Human Detection
-Uses ML-based object detection (YOLO) integrated with the drone's camera.
-TCP Communication
-Sends detected coordinates and images to a central server for quick action.
-Adaptive Search Algorithm
-Adjusts search pattern dynamically based on environmental conditions.
-Swarm Coordination
-Uses decentralized communication to avoid redundant scanning and optimize resource usage.
+## Overview  
+SkySave is an **autonomous drone swarm system** designed for **search and rescue operations** in disaster-hit regions such as forests, islands, and difficult terrains.  
+Each drone is equipped with a **camera and a machine learning-based detection model** to identify humans in real time.  
+The system uses **GPS-based path planning**, **TCP communication**, and a **decentralized coordination protocol** to optimize search coverage.
 
-**Technology Stack**
-**Hardware**: Pixhawk, Jetson Nano, GPS Module, Camera
-**Software**: Python, OpenCV, YOLO v8, MAVLink
-**Networking**: TCP/IP Protocol
+---
 
-**System Architecture**
-**Drone Assembly** – Quadcopters with Pixhawk flight controller and Jetson Nano for onboard processing.
-**Machine Learning **– YOLO v8 for real-time human detection on captured video feed.
-**Communication** – Drones send data (image + GPS) to the central server via TCP sockets.
-**Central Dashboard** – Displays detected locations and images for rescue teams.
+## Key Features
+- **Autonomous Flight & Path Planning**  
+  - Implements **GPS-based recursive path planning** for efficient coverage.  
+- **Real-Time Human Detection**  
+  - Uses **YOLO (Machine Learning)** integrated with drone cameras.  
+- **TCP Communication**  
+  - Transfers **detected coordinates and images** to the central server instantly.  
+- **Adaptive Search Algorithm**  
+  - Dynamically adjusts search based on environmental conditions.  
+- **Swarm Collaboration**  
+  - Decentralized communication prevents redundant scanning.
 
-**Use Case**
-Disaster zones: Earthquakes, floods, forest areas
-Military and security operations
-Remote island rescue
+---
 
-**How It Works**
-Drones take off and follow predefined GPS-based paths.
-Cameras capture frames and run human detection inference.
-On detection, coordinates + image are sent to the server.
-Central system displays real-time alerts to rescue teams.
+## Tech Stack
+- **Hardware:** Pixhawk, Jetson Nano, GPS Module, Camera  
+- **Software:** Python, OpenCV, YOLO, MAVLink  
+- **Networking:** TCP/IP Protocol  
+
+---
+
+## System Architecture
+1. **Drone Assembly:** Quadcopters using Pixhawk & Jetson Nano for onboard processing.  
+2. **Machine Learning:** YOLO model for real-time human detection on video feed.  
+3. **Communication:** TCP sockets for sending detection data (image + GPS) to server.  
+4. **Central Dashboard:** Displays live alerts for rescue teams.  
+
+---
+
+## Use Cases
+- Disaster zones: Earthquakes, floods, forest areas  
+- Military & security search missions  
+- Remote island rescue operations  
+
+---
+
+## How It Works
+1. Drones take off and follow **predefined GPS-based paths**.  
+2. Cameras capture frames → **ML detects humans in real time**.  
+3. On detection → **Coordinates + Image sent to central server**.  
+4. **Rescue teams get live alerts and exact locations**.  
+
+---
+## Images
+![drone(skysave)](https://github.com/user-attachments/assets/3187b338-3a14-44bc-94ca-fdd212eeb4f9)
+![drone(ml)](https://github.com/user-attachments/assets/13258998-3c3e-4c17-9e82-154e7e45379a)
+
+
+
